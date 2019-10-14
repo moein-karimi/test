@@ -4,19 +4,6 @@ import moment from 'jalali-moment';
 import './App.css';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      script: new Date().getFullYear(),
-      date: new Date().getMonth()
-    };
-  }
-
-  /*  componentDidMount() {
-    console.log(this.state.script);
-  } */
-
   render() {
     return (
       <div className="App">
