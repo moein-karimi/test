@@ -4,6 +4,14 @@ import moment from 'jalali-moment';
 import './App.css';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      script: new Date().getFullYear()
+    };
+  }
+
   render() {
     return (
       <div className="App">
@@ -100,7 +108,7 @@ class App extends React.Component {
                     .format('YYYY/MM/D')}
                 </p>
                 <p>
-                  <small>&copy;</small>
+                  {/* <small>&copy;</small> */}
                   Copyright &copy;{this.state.script} All rights reserved | This
                   template is made with{' '}
                   <i class="icon-heart" aria-hidden="true"></i> by{' '}
